@@ -16,3 +16,7 @@ insert into employee_payroll values
 ('Charlie',300000.0,'2021-05-21')
 --UC-4
 select * from employee_payroll
+--UC-5
+select salary from employee_payroll where name = 'Bill'
+select * from employee_payroll
+where StartDate between cast('2019-11-13' As date) and GETDATE()
