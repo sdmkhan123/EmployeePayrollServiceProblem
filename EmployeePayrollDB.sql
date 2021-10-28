@@ -20,3 +20,8 @@ select * from employee_payroll
 select salary from employee_payroll where name = 'Bill'
 select * from employee_payroll
 where StartDate between cast('2019-11-13' As date) and GETDATE()
+--UC-6
+ALTER TABLE employee_payroll
+ADD Gender char(2)
+update employee_payroll set Gender = 'M' where name = 'Bill' or name = 'Charlie';
+update employee_payroll set Gender = 'F' where name = 'Terisa';
