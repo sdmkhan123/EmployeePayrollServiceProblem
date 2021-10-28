@@ -8,8 +8,11 @@ create table employee_payroll(
 	Name varchar (200),
 	Salary float,
 	StartDate date
-	);
+);
+--UC-3
 insert into employee_payroll values
 ('Bill',100000.0,'2018-01-03'),
 ('Terisa',200000.0,'2019-11-13'),
 ('Charlie',300000.0,'2021-05-21')
+--UC-4
+select * from employee_payroll
