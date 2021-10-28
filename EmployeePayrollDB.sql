@@ -34,3 +34,9 @@ select min(salary) as 'minimumSalary',Gender from employee_payroll group by Gend
 select max(salary) as 'maximumSalary',Gender from employee_payroll group by Gender;
 select count(Gender) as 'male' from employee_payroll where Gender='M' 
 select count(Gender) as 'female' from employee_payroll where Gender='F'
+--UC-8
+alter table employee_payroll add 
+phone varchar(13),
+department varchar(100) not null default 'B.E',
+address varchar(250) not null default 'Banglore'
+select * from employee_payroll
